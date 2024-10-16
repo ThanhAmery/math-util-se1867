@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.thanhamery</groupId>
+    <artifactId>math-util-se1867</artifactId>
+    <version>69.69</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!--ĐÂY LÀ NƠI KHAI BÁO TÊN CÁC THƯ VIỆN TA CẦN DÙNG
+     CÁC THƯ VIỆN NÀY NẰM SẴN Ở 1 NƠI, MAVEN LÀ 1 TOOL ĐÓNG VAI TRÒ
+     QUẢN LÍ CÁC THƯ VIỆN TRONG 1 APP JAVA
+     ĐÓNG VAI TRÒ BUILD APP TỪ .JAVA -> .WAR .JAR (~ .DLL)
+     NÓ TỰ ĐI TÌM THƯ VIỆN, DOWNLOAD VỀ MÁY MÌNH, ĐƯA VÀO DỰ ÁN CỦA TA LUÔN - IMPORT VÀO DỰ ÁN-->
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.8.1.jre11</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.11.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.5.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
