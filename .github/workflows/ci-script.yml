@@ -35,7 +35,7 @@ jobs:
       run: mkdir staging && cp target/*.jar staging # tạo thư mục staging chứa file .jar .war sau khi build      
      
     - name: Make hyperlink to jar-war file # Tạo hyperlink để download build 
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
           name: Click-here-to-download-jar-library
           path: staging
